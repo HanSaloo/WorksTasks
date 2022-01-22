@@ -93,17 +93,29 @@ class TaskRunner
                 break;
             case 5:
 
-                $killerArrIn = [["day"=> 1, "day"=> 5, "day"=> 1,"day"=> 1,"day"=> 1,"day"=> 1,"day"=> 1],
-                                ["day"=> 1, "day"=> 10, "day"=> 1,"day"=> 1,"day"=> 1,"day"=> 1,"day"=> 1]];
+                $killerArrIn = [["day"=> 31, "month"=> 12, "year"=> 1, "minute"=> 60,"second"=> 60,"season"=> 4,"seuntury"=> 15],
+                                ["day"=> 20, "month"=> 33, "year"=> 1, "minute"=> 60,"second"=> 60,"season"=> 4,"seuntury"=> 15]
+                                ];
+                $faceControl = readline();
 
-//                for ($i = 0; $i < 5; $i++) {
-//                    $killerArrIn[$i] = readline();
-//                    for ($j = 0; $j < $i; $j++) {
-//                        $killerArrIn[$j] = readline();
-//                    }
-//                }
-                var_dump($killerArrIn);
-                $faceControl[] = readline();
+foreach ($killerArrIn as $key => $arr) {
+    foreach ($arr as $name => $value) {
+        if ($name == $faceControl) {
+             // var_dump($value);
+             // unset($name);
+            // var_dump($name);
+
+             // die;
+            echo "VAL Fiinded \n";
+        }
+             // var_dump($key);
+
+        // var_dump($val);
+    }
+
+}
+
+print_r($killerArrIn);
 
 
 //                for ($i = 0; $i < count($killerArrIn); $i++) {

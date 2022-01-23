@@ -93,41 +93,24 @@ class TaskRunner
                 break;
             case 5:
 
-                $killerArrIn = [["day"=> 31, "month"=> 12, "year"=> 1, "minute"=> 60,"second"=> 60,"season"=> 4,"seuntury"=> 15],
-                                ["day"=> 20, "month"=> 33, "year"=> 1, "minute"=> 60,"second"=> 60,"season"=> 4,"seuntury"=> 15]
-                                ];
+                $killerArrIn = [
+                  ["day"=> 31, "month"=> 12, "year"=> 1, "minute"=> 60,"second"=> 60,"season"=> 4,"sentury"=> 15],
+                  ["day"=> 20, "month"=> 33, "year"=> 1, "minute"=> 60,"second"=> 60,"season"=> 4,"sentury"=> 15]
+                ];
                 $faceControl = readline();
+                echo "Array before: \n";
+                print_r($killerArrIn);
 
-foreach ($killerArrIn as $key => $arr) {
-    foreach ($arr as $name => $value) {
-        if ($name == $faceControl) {
-             // var_dump($value);
-             // unset($name);
-            // var_dump($name);
-
-             // die;
-            echo "VAL Fiinded \n";
-        }
-             // var_dump($key);
-
-        // var_dump($val);
-    }
-
-}
+                foreach ($killerArrIn as $key => $arr){
+                    foreach ($arr as $item => $val) {
+                        if ($faceControl == $item){
+                            unset($killerArrIn[$key][$item]);
+                        }
+                    }
+                }
+                echo "Array after: \n";
 
 print_r($killerArrIn);
-
-
-//                for ($i = 0; $i < count($killerArrIn); $i++) {
-//                    if ($killerArrIn[$i] & 1) {
-//                        echo "число " . $killerArrIn[$i] . " не парне!\n";
-//                        echo "ну або NO~\n";
-//                    } elseif (!($killerArrIn[$i] & 1)) {
-//                        echo "число " . $killerArrIn[$i] . " парне!\n";
-//                        echo "ну або YES~\n";
-//                    }
-//                }
-
                 break;
 
             default:

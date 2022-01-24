@@ -93,6 +93,7 @@ class TaskRunner
                 break;
             case 5:
 
+<<<<<<< HEAD
                 $killerArrIn = [
                   ["day"=> 31, "month"=> 12, "year"=> 1, "minute"=> 60,"second"=> 60,"season"=> 4,"sentury"=> 15],
                   ["day"=> 20, "month"=> 33, "year"=> 1, "minute"=> 60,"second"=> 60,"season"=> 4,"sentury"=> 15]
@@ -111,6 +112,31 @@ class TaskRunner
                 echo "Array after: \n";
 
 print_r($killerArrIn);
+=======
+                $killerArrIn = [["day"=> 1, "day"=> 5, "day"=> 1,"day"=> 1,"day"=> 1,"day"=> 1,"day"=> 1],
+                                ["day"=> 1, "day"=> 10, "day"=> 1,"day"=> 1,"day"=> 1,"day"=> 1,"day"=> 1]];
+
+//                for ($i = 0; $i < 5; $i++) {
+//                    $killerArrIn[$i] = readline();
+//                    for ($j = 0; $j < $i; $j++) {
+//                        $killerArrIn[$j] = readline();
+//                    }
+//                }
+                var_dump($killerArrIn);
+                $faceControl[] = readline();
+
+
+//                for ($i = 0; $i < count($killerArrIn); $i++) {
+//                    if ($killerArrIn[$i] & 1) {
+//                        echo "число " . $killerArrIn[$i] . " не парне!\n";
+//                        echo "ну або NO~\n";
+//                    } elseif (!($killerArrIn[$i] & 1)) {
+//                        echo "число " . $killerArrIn[$i] . " парне!\n";
+//                        echo "ну або YES~\n";
+//                    }
+//                }
+
+>>>>>>> parent of 5956c1c (22.01 (0.01))
                 break;
 
             default:
